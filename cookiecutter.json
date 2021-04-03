@@ -1,6 +1,6 @@
 {
-    "cookiecutter.module_variable_name": "my_module",
-    "cookiecutter.module_display_name": "My Module",
-    "cookiecutter.author_name": "First Last",
-    "cookiecutter.author_email": "email@email.com",
+    "module_variable_name": "my_module",
+    "module_display_name": "My Module",
+    "author_name": "First Last",
+    "author_email": "email@email.com"
 }
