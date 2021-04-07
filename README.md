@@ -1,12 +1,3 @@
-# {{cookiecutter.module_display_name}}
+## Python Project Cookiecutter Template
 
-Project overview and notes.
-
-### Setup Instructions
-pass
-
-### Execution Instructions
-pass
-
-### Development Instructions
-pass
+This is a hand-rolled cookiecutter template for Python projects.
