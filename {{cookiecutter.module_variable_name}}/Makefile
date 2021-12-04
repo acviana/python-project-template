@@ -16,7 +16,7 @@ flake8:
 install:
 	poetry install
 
-pre-commit: black flake8 test build
+pre-commit: black flake8 test
 
 test:
 	pytest -vvs --cov-report term-missing --cov={{cookiecutter.module_variable_name}} tests/
