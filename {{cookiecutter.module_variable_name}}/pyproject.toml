@@ -9,8 +9,8 @@ python = "^{{cookiecutter.python_version}}"
 
 [tool.poetry.dev-dependencies]
 black = "^23.1a1"
-flake8 = "^4.0.1"
-pytest = "^6.0.0"
+flake8 = "^6.0.0"
+pytest = "^7.2.0"
 pytest-coverage = "^0.0"
 
 [build-system]
