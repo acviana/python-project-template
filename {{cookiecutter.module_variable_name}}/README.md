@@ -14,4 +14,5 @@ pass
 
 ### Development Instructions
 
-The Poetry development dependencies are installed by default when you run `poetry install`. If you are using pip you can install them from the `requirements_dev.txt` file.
+The Poetry development dependencies are installed by default when you run `poetry install --with=dev`. 
+If you are using pip you can install them from the `requirements_dev.txt` file.

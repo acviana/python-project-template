@@ -8,7 +8,7 @@ black-diff:
 
 export:
 	poetry export -f requirements.txt -o requirements.txt
-	poetry export -f requirements.txt -o requirements_dev.txt --dev
+	poetry export -f requirements.txt -o requirements_dev.txt --with=dev
 
 flake8:
 	flake8 {{cookiecutter.module_variable_name}}/ tests/ --statistics

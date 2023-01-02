@@ -7,7 +7,7 @@ authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 [tool.poetry.dependencies]
 python = "^{{cookiecutter.python_version}}"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 black = "^23.1a1"
 flake8 = "^6.0.0"
 pytest = "^7.2.0"
