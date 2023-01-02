@@ -12,6 +12,7 @@ This template comes bundled with the following technologies:
  - Testing with [pytest](https://docs.pytest.org/en/6.2.x/)
  - Linting with [ruff](https://github.com/charliermarsh/ruff)
  - Formatting with [black](https://github.com/psf/black)
+ - Type checking with [mypy](https://mypy-lang.org/)
  - Suggested usage patterns in a Makefile
 
 ### Usage

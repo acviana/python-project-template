@@ -13,7 +13,10 @@ export:
 install:
 	poetry install
 
-pre-commit: black ruff test
+mypy:
+	mypy advent_of_code_2022/ --ignore-missing-imports
+
+pre-commit: black mypy ruff test
 
 ruff:
 	ruff {{cookiecutter.module_variable_name}}/ tests/

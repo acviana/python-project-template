@@ -10,6 +10,7 @@ python = "^{{cookiecutter.python_version}}"
 [tool.poetry.group.dev.dependencies]
 black = "^23.1a1"
 flake8 = "^6.0.0"
+mypy = "^0.991"
 pytest = "^7.2.0"
 pytest-coverage = "^0.0"
 ruff = "^0.0.203"
