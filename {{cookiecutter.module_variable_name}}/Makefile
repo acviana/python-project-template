@@ -10,13 +10,13 @@ export:
 	poetry export -f requirements.txt -o requirements.txt
 	poetry export -f requirements.txt -o requirements_dev.txt --with=dev
 
-flake8:
-	flake8 {{cookiecutter.module_variable_name}}/ tests/ --statistics
-
 install:
 	poetry install
 
-pre-commit: black flake8 test
+pre-commit: black ruff test
+
+ruff:
+	ruff {{cookiecutter.module_variable_name}}/ tests/
 
 test:
 	pytest -vvs --cov-report term-missing --cov={{cookiecutter.module_variable_name}} tests/

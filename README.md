@@ -10,7 +10,7 @@ This template comes bundled with the following technologies:
  - Python version management with [pyenv](https://github.com/pyenv/pyenv)
  - Dependency management with [Poetry](https://python-poetry.org/)
  - Testing with [pytest](https://docs.pytest.org/en/6.2.x/)
- - Linting with [flake8](https://flake8.pycqa.org/en/latest/)
+ - Linting with [ruff](https://github.com/charliermarsh/ruff)
  - Formatting with [black](https://github.com/psf/black)
  - Suggested usage patterns in a Makefile
 
