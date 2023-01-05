@@ -6,6 +6,9 @@ black-diff:
 	black {{cookiecutter.module_variable_name}} --diff
 	black tests --diff
 
+docs:
+	(cd docs && make html)
+
 export-requirements:
 	poetry export -f requirements.txt -o requirements.txt
 	poetry export -f requirements.txt -o requirements_dev.txt --with=dev
@@ -18,7 +21,7 @@ mypy:
 
 pre-commit: black mypy ruff test
 
-publish-release: pre-commit export-requirements
+publish-release: pre-commit docs export-requirements
 
 ruff:
 	ruff {{cookiecutter.module_variable_name}}/ tests/

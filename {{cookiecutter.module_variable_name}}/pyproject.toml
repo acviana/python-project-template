@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "{{cookiecutter.module_variable_name}}"
-version = "0.1.0"
+version = "{{cookiecutter.package_version}}"
 description = ""
 authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 
@@ -14,6 +14,8 @@ mypy = "^0.991"
 pytest = "^7.2.0"
 pytest-coverage = "^0.0"
 ruff = "^0.0.203"
+sphinx = "^6.0.0"
+sphinx-autodoc-typehints = "^1.19.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
