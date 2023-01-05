@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Advent of Code 2022's documentation!
+Welcome to {{cookiecutter.module_display_name}}'s documentation!
 ===============================================
 
 .. toctree::
@@ -13,12 +13,16 @@ Welcome to Advent of Code 2022's documentation!
 API Reference
 =============
 
-Day 1
------
+Add autodocumentation here! See source file.
 
-.. automodule:: advent_of_code_2022.day_1
-   :members:
-   :undoc-members:
+.. Sample Module Autodocumentation
+..
+.. My Module
+.. ---------
+
+.. .. automodule:: {{cookiecutter.module_variable_name}}.my_module
+..    :members:
+..    :undoc-members:
 
 
 Indices and tables
