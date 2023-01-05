@@ -1,3 +1,5 @@
+.PHONY: docs
+
 black:
 	black {{cookiecutter.module_variable_name}}
 	black tests
