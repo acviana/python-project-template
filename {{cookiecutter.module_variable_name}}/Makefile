@@ -1,3 +1,5 @@
+.PHONY: docs
+
 black:
 	black {{cookiecutter.module_variable_name}}
 	black tests
@@ -6,17 +8,25 @@ black-diff:
 	black {{cookiecutter.module_variable_name}} --diff
 	black tests --diff
 
-export:
-	poetry export -f requirements.txt -o requirements.txt
-	poetry export -f requirements.txt -o requirements_dev.txt --dev
+docs:
+	(cd docs && make html)
 
-flake8:
-	flake8 {{cookiecutter.module_variable_name}}/ tests/ --statistics
+export-requirements:
+	poetry export -f requirements.txt -o requirements.txt
+	poetry export -f requirements.txt -o requirements_dev.txt --with=dev
 
 install:
 	poetry install
 
-pre-commit: black flake8 test
+mypy:
+	mypy {{cookiecutter.module_variable_name}}/ --ignore-missing-imports
+
+pre-commit: black mypy ruff test
+
+publish-release: pre-commit docs export-requirements
+
+ruff:
+	ruff {{cookiecutter.module_variable_name}}/ tests/
 
 test:
 	pytest -vvs --cov-report term-missing --cov={{cookiecutter.module_variable_name}} tests/
@@ -24,7 +34,7 @@ test:
 _update:
 	poetry update
 
-update: _update export pre-commit
+update-all: _update publish-release
 
-update-diff:
+update-all-diff:
 	poetry update --dry-run | grep -i updat

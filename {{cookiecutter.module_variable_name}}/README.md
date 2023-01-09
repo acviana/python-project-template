@@ -13,5 +13,6 @@ A `requirements.txt` file is included if you prefer to set up your own environme
 pass
 
 ### Development Instructions
-The Poetry development dependencies are installed by default when you run `poetry install`. If you are using pip you can install them from the `requirements_dev.txt` file.
-This project uses the pre-commit package to check commits. You can install this hooks from this project by running `pre-commit install`.
+
+The Poetry development dependencies are installed by default when you run `poetry install --with=dev`. 
+If you are using pip you can install them from the `requirements_dev.txt` file.
