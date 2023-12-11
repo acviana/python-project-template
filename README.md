@@ -1,7 +1,7 @@
 ## Python Project Cookiecutter Template
 
 This is a hand-rolled cookiecutter template for Python projects.
-It's build around best-practices influenced by the [Hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/) articles.
+It's build around best-practices influenced by the [Hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/) series of articles.
 
 ### Technologies
 
