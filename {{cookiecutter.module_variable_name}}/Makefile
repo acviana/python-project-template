@@ -1,8 +1,7 @@
 .PHONY: docs
 
-format:
-	ruff format {{cookiecutter.module_variable_name}}
-	ruff format tests
+check-outdated:
+	poetry show --outdated
 
 docs:
 	(cd docs && make html)
@@ -10,6 +9,10 @@ docs:
 export-requirements:
 	poetry export -f requirements.txt -o requirements.txt
 	poetry export -f requirements.txt -o requirements_dev.txt --with=dev
+
+format:
+	ruff format {{cookiecutter.module_variable_name}}
+	ruff format tests
 
 install:
 	poetry install
