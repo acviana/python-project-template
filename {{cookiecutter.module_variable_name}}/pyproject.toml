@@ -8,7 +8,6 @@ authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 python = "^{{cookiecutter.python_version}}"
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.1"
 flake8 = "^7.0.0"
 mypy = "^1.8"
 pytest = "^8.0.0"
