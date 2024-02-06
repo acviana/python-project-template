@@ -6,6 +6,7 @@ authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 
 [tool.poetry.dependencies]
 python = "^{{cookiecutter.python_version}}"
+poetry-plugin-export = "^1.6.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.0.0"
