@@ -3,7 +3,7 @@
     "module_display_name": "My Module",
     "author_name": "First Last",
     "author_email": "email@email.com",
-    "python_version": "3.9.9",
+    "python_version": "3.12.0",
     "package_version": "0.0.1a",
     "copyright": "MIT License"
 }
